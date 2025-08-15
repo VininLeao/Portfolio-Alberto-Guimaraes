@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-key="work_title">Portfolio - Alberto Guimarães</title>
+    <meta name="description" data-key="work_description" content="Explore o portfólio completo de Alberto Guimarães: projetos de edição de vídeo e fotografia para marcas globais.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Alberto Guimarães</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-key="nav_home">Home</a></li>
+                <li><a href="work.html" class="nav-link active" data-key="nav_work">Work</a></li>
+                <li><a href="about.html" class="nav-link" data-key="nav_about">About</a></li>
+                <li><a href="contact.html" class="nav-link" data-key="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="pt">🇧🇷</button>
+                <button class="lang-btn" data-lang="en">🇺🇸</button>
+                <button class="lang-btn" data-lang="es">🇪🇸</button>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Header -->
+    <section class="work-header">
+        <div class="container">
+            <h1 class="page-title" data-key="work_page_title">Portfolio</h1>
+            <p class="page-subtitle" data-key="work_page_subtitle">A curated collection of visual storytelling projects</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-key="filter_all">All Work</button>
+                <button class="filter-btn" data-filter="video" data-key="filter_video">Video Editing</button>
+                <button class="filter-btn" data-filter="photo" data-key="filter_photography">Photography</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolioGrid">
+                
+                <!-- Video Project 1 -->
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech Startup Brand Video" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project1_title">Tech Startup Brand Video</h3>
+                                <p data-key="project1_category">Video Editing</p>
+                                <button class="portfolio-btn" data-project="project1" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                        <div class="play-indicator">▶</div>
+                    </div>
+                </div>
+
+                <!-- Photo Project 1 -->
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Executive Portraits" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project2_title">Corporate Executive Portraits</h3>
+                                <p data-key="project2_category">Photography</p>
+                                <button class="portfolio-btn" data-project="project2" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project 2 -->
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="YouTube Series Production" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project3_title">YouTube Series Production</h3>
+                                <p data-key="project3_category">Video Editing</p>
+                                <button class="portfolio-btn" data-project="project3" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                        <div class="play-indicator">▶</div>
+                    </div>
+                </div>
+
+                <!-- Photo Project 2 -->
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product Photography Campaign" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project4_title">Product Photography Campaign</h3>
+                                <p data-key="project4_category">Photography</p>
+                                <button class="portfolio-btn" data-project="project4" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Project 3 -->
+                <div class="portfolio-item" data-category="video">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Content" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project5_title">Social Media Content</h3>
+                                <p data-key="project5_category">Video Editing</p>
+                                <button class="portfolio-btn" data-project="project5" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                        <div class="play-indicator">▶</div>
+                    </div>
+                </div>
+
+                <!-- Photo Project 3 -->
+                <div class="portfolio-item" data-category="photo">
+                    <div class="portfolio-media">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Lifestyle Photography" class="portfolio-thumbnail">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3 data-key="project6_title">Brand Lifestyle Photography</h3>
+                                <p data-key="project6_category">Photography</p>
+                                <button class="portfolio-btn" data-project="project6" data-key="view_project">View Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-media">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <div class="modal-meta">
+                        <span class="modal-category"></span>
+                        <span class="modal-year">2024</span>
+                    </div>
+                    <div class="modal-description">
+                        <div class="case-study">
+                            <div class="case-item">
+                                <h4 data-key="challenge_title">Challenge</h4>
+                                <p class="challenge-text"></p>
+                            </div>
+                            <div class="case-item">
+                                <h4 data-key="solution_title">Solution</h4>
+                                <p class="solution-text"></p>
+                            </div>
+                            <div class="case-item">
+                                <h4 data-key="result_title">Result</h4>
+                                <p class="result-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p data-key="footer_copyright">&copy; 2024 Alberto Guimarães. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Vimeo">🎥</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
