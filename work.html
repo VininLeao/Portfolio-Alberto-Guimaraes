@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="work_title">Portfolio - Alberto Guimarães</title>
-    <meta name="description" data-key="work_description" content="Explore o portfólio completo de Alberto Guimarães: projetos de edição de vídeo e fotografia para marcas globais.">
+    <meta name="description" data-key="work_description" content="Explore o portfólio completo de Alberto Guimarães: projetos de criação de vídeo e design gráfico para marcas globais.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Flag Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
     
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
@@ -29,9 +32,15 @@
             </ul>
 
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="pt">🇧🇷</button>
-                <button class="lang-btn" data-lang="en">🇺🇸</button>
-                <button class="lang-btn" data-lang="es">🇪🇸</button>
+                <button class="lang-btn active" data-lang="pt">
+                    <span class="fi fi-br fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="fi fi-us fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <span class="fi fi-es fis"></span>
+                </button>
             </div>
 
             <div class="hamburger">
@@ -55,8 +64,8 @@
         <div class="container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all" data-key="filter_all">All Work</button>
-                <button class="filter-btn" data-filter="video" data-key="filter_video">Video Editing</button>
-                <button class="filter-btn" data-filter="photo" data-key="filter_photography">Photography</button>
+                <button class="filter-btn" data-filter="video" data-key="filter_video">Video Creation</button>
+                <button class="filter-btn" data-filter="design" data-key="filter_design">Graphic Design</button>
             </div>
         </div>
     </section>
@@ -73,7 +82,7 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3 data-key="project1_title">Tech Startup Brand Video</h3>
-                                <p data-key="project1_category">Video Editing</p>
+                                <p data-key="project1_category">Video Creation</p>
                                 <button class="portfolio-btn" data-project="project1" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -81,14 +90,14 @@
                     </div>
                 </div>
 
-                <!-- Photo Project 1 -->
-                <div class="portfolio-item" data-category="photo">
+                <!-- Design Project 1 -->
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-media">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Executive Portraits" class="portfolio-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Corporate Visual Identity" class="portfolio-thumbnail">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3 data-key="project2_title">Corporate Executive Portraits</h3>
-                                <p data-key="project2_category">Photography</p>
+                                <h3 data-key="project2_title">Corporate Visual Identity</h3>
+                                <p data-key="project2_category">Graphic Design</p>
                                 <button class="portfolio-btn" data-project="project2" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -102,7 +111,7 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3 data-key="project3_title">YouTube Series Production</h3>
-                                <p data-key="project3_category">Video Editing</p>
+                                <p data-key="project3_category">Video Creation</p>
                                 <button class="portfolio-btn" data-project="project3" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -110,14 +119,14 @@
                     </div>
                 </div>
 
-                <!-- Photo Project 2 -->
-                <div class="portfolio-item" data-category="photo">
+                <!-- Design Project 2 -->
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-media">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Product Photography Campaign" class="portfolio-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Social Media Graphics" class="portfolio-thumbnail">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3 data-key="project4_title">Product Photography Campaign</h3>
-                                <p data-key="project4_category">Photography</p>
+                                <h3 data-key="project4_title">Social Media Graphics</h3>
+                                <p data-key="project4_category">Graphic Design</p>
                                 <button class="portfolio-btn" data-project="project4" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -131,7 +140,7 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h3 data-key="project5_title">Social Media Content</h3>
-                                <p data-key="project5_category">Video Editing</p>
+                                <p data-key="project5_category">Video Creation</p>
                                 <button class="portfolio-btn" data-project="project5" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -139,14 +148,14 @@
                     </div>
                 </div>
 
-                <!-- Photo Project 3 -->
-                <div class="portfolio-item" data-category="photo">
+                <!-- Design Project 3 -->
+                <div class="portfolio-item" data-category="design">
                     <div class="portfolio-media">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Lifestyle Photography" class="portfolio-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Brand Marketing Materials" class="portfolio-thumbnail">
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
-                                <h3 data-key="project6_title">Brand Lifestyle Photography</h3>
-                                <p data-key="project6_category">Photography</p>
+                                <h3 data-key="project6_title">Brand Marketing Materials</h3>
+                                <p data-key="project6_category">Graphic Design</p>
                                 <button class="portfolio-btn" data-project="project6" data-key="view_project">View Project</button>
                             </div>
                         </div>
@@ -169,7 +178,7 @@
                     <h2 class="modal-title"></h2>
                     <div class="modal-meta">
                         <span class="modal-category"></span>
-                        <span class="modal-year">2024</span>
+                        <span class="modal-year">2025</span>
                     </div>
                     <div class="modal-description">
                         <div class="case-study">
@@ -197,7 +206,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p data-key="footer_copyright">&copy; 2024 Alberto Guimarães. All rights reserved.</p>
+                    <p data-key="footer_copyright">&copy; 2025 Alberto Guimarães. All rights reserved.</p>
+                    <p class="footer-credits"><span data-key="footer_developed">Desenvolvido por</span> <a href="https://github.com/vininleao" target="_blank" rel="noopener">Vinícius Leão</a></p>
                 </div>
                 <div class="footer-right">
                     <div class="social-links">

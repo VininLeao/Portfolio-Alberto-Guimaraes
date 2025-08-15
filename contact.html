@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="contact_title">Contact - Alberto Guimarães</title>
-    <meta name="description" data-key="contact_description" content="Entre em contato com Alberto Guimarães para discutir seu próximo projeto de vídeo ou fotografia. Atendimento global para marcas premium.">
+    <meta name="description" data-key="contact_description" content="Entre em contato comigo para discutir seu próximo projeto de criação de vídeo ou design gráfico. Vamos criar algo incrível juntos.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Flag Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
     
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E">
@@ -29,9 +32,15 @@
             </ul>
 
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="pt">🇧🇷</button>
-                <button class="lang-btn" data-lang="en">🇺🇸</button>
-                <button class="lang-btn" data-lang="es">🇪🇸</button>
+                <button class="lang-btn active" data-lang="pt">
+                    <span class="fi fi-br fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="fi fi-us fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <span class="fi fi-es fis"></span>
+                </button>
             </div>
 
             <div class="hamburger">
@@ -77,10 +86,10 @@
                             <label for="service" data-key="form_service">Service *</label>
                             <select id="service" name="service" required>
                                 <option value="" data-key="form_select_service">Select a service</option>
-                                <option value="video-production" data-key="service_video_production">Video Production</option>
-                                <option value="video-editing" data-key="service_video_editing">Video Editing</option>
-                                <option value="photography" data-key="service_photography">Photography</option>
-                                <option value="creative-direction" data-key="service_creative_direction">Creative Direction</option>
+                                <option value="video-creation" data-key="service_video">Video Creation & Editing</option>
+                                <option value="graphic-design" data-key="service_design">Graphic Design (Banners, Social Media Graphics)</option>
+                                <option value="post-production" data-key="service_post">Post-Production (Editing Only)</option>
+                                <option value="creative-consulting" data-key="service_consulting">Creative Consulting</option>
                                 <option value="other" data-key="service_other">Other</option>
                             </select>
                         </div>
@@ -94,10 +103,10 @@
                             <label for="timeline" data-key="form_timeline">Timeline</label>
                             <select id="timeline" name="timeline">
                                 <option value="" data-key="form_select_timeline">Select timeline</option>
-                                <option value="urgent" data-key="timeline_urgent">ASAP (Rush job)</option>
-                                <option value="1-month" data-key="timeline_1month">1 Month</option>
-                                <option value="2-3-months" data-key="timeline_2_3months">2-3 Months</option>
-                                <option value="flexible" data-key="timeline_flexible">Flexible</option>
+                                <option value="quick" data-key="timeline_quick">Quick (1-2 weeks)</option>
+                                <option value="standard" data-key="timeline_standard">Standard (2-4 weeks)</option>
+                                <option value="flexible" data-key="timeline_flexible">Flexible (looking for the right project)</option>
+                                <option value="urgent" data-key="timeline_urgent">Urgent (rush fee to be discussed)</option>
                             </select>
                         </div>
                         
@@ -119,7 +128,7 @@
                             <div class="contact-icon">📧</div>
                             <div class="contact-details">
                                 <h4 data-key="contact_email_title">Email</h4>
-                                <p>hello@albertoguimaraes.com</p>
+                                <p>betorog5@gmail.com</p>
                             </div>
                         </div>
                         
@@ -127,7 +136,7 @@
                             <div class="contact-icon">📱</div>
                             <div class="contact-details">
                                 <h4 data-key="contact_phone_title">WhatsApp</h4>
-                                <p>+55 11 99999-9999</p>
+                                <p>+55 21 97239-4595</p>
                             </div>
                         </div>
                         
@@ -135,7 +144,7 @@
                             <div class="contact-icon">🌍</div>
                             <div class="contact-details">
                                 <h4 data-key="contact_location_title">Location</h4>
-                                <p data-key="contact_location">São Paulo, Brazil</p>
+                                <p data-key="contact_location">Goiás, Brazil</p>
                             </div>
                         </div>
                         
@@ -154,7 +163,7 @@
                             <div class="status-indicator available"></div>
                             <span data-key="availability_status">Accepting new projects</span>
                         </div>
-                        <p data-key="availability_description">Currently booking projects for Q1 2025. Premium rush projects available with expedited timeline.</p>
+                        <p data-key="availability_description">Currently available for new projects. Rush projects can be accommodated with flexible timeline.</p>
                     </div>
                 </div>
             </div>
@@ -169,22 +178,22 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3 data-key="faq1_question">What's your typical project timeline?</h3>
-                    <p data-key="faq1_answer">Most video projects take 2-4 weeks from concept to delivery, depending on complexity. Photography projects typically require 1-2 weeks. Rush projects available with premium pricing.</p>
+                    <p data-key="faq1_answer">Video projects usually take 1-3 weeks, depending on complexity. Graphic design typically 1-2 weeks. Rush projects are possible with agreed deadline.</p>
                 </div>
                 
                 <div class="faq-item">
                     <h3 data-key="faq2_question">Do you work with international clients?</h3>
-                    <p data-key="faq2_answer">Absolutely! I work with clients across North America, Europe, and Latin America. All communication is conducted in English, Portuguese, or Spanish as needed.</p>
+                    <p data-key="faq2_answer">Yes! I work with clients in Brazil and abroad. All communication can be in Portuguese, English, or Spanish as needed.</p>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 data-key="faq3_question">What's included in your video editing service?</h3>
-                    <p data-key="faq3_answer">Complete post-production including editing, color grading, audio mixing, motion graphics, and delivery in multiple formats optimized for your distribution channels.</p>
+                    <h3 data-key="faq3_question">What's included in video creation?</h3>
+                    <p data-key="faq3_answer">Complete video production including concept development, editing, color grading, audio mixing, visual effects, and delivery in formats optimized for your platforms.</p>
                 </div>
                 
                 <div class="faq-item">
-                    <h3 data-key="faq4_question">Can you help with creative strategy?</h3>
-                    <p data-key="faq4_answer">Yes! I offer creative direction services including concept development, storytelling strategy, and campaign planning to ensure your content achieves maximum impact.</p>
+                    <h3 data-key="faq4_question">Do you help with creative strategy?</h3>
+                    <p data-key="faq4_answer">Yes! I offer creative consulting including concept development and visual direction to ensure your content has maximum impact.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +204,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p data-key="footer_copyright">&copy; 2024 Alberto Guimarães. All rights reserved.</p>
+                    <p data-key="footer_copyright">&copy; 2025 Alberto Guimarães. All rights reserved.</p>
+                    <p class="footer-credits"><span data-key="footer_developed">Desenvolvido por</span> <a href="https://github.com/vininleao" target="_blank" rel="noopener">Vinícius Leão</a></p>
                 </div>
                 <div class="footer-right">
                     <div class="social-links">

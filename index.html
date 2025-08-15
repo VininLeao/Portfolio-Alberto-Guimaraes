@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="home_title">Alberto Guimarães - Creative Director & Visual Storyteller</title>
-    <meta name="description" data-key="home_description" content="Diretor criativo e editor de vídeo premium para marcas globais. Especialista em storytelling visual para startups de tecnologia e criadores de conteúdo.">
+    <meta name="description" data-key="home_description" content="Criador de conteúdo visual especializado em vídeos e design gráfico para marcas e criadores de conteúdo.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Flag Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"/>
     
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -44,9 +47,15 @@
 
             <!-- Language Selector -->
             <div class="language-selector">
-                <button class="lang-btn active" data-lang="pt">🇧🇷</button>
-                <button class="lang-btn" data-lang="en">🇺🇸</button>
-                <button class="lang-btn" data-lang="es">🇪🇸</button>
+                <button class="lang-btn active" data-lang="pt">
+                    <span class="fi fi-br fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="fi fi-us fis"></span>
+                </button>
+                <button class="lang-btn" data-lang="es">
+                    <span class="fi fi-es fis"></span>
+                </button>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -102,7 +111,7 @@
                             <div class="featured-info">
                                 <h3 data-key="featured_project1_title">Tech Startup Campaign</h3>
                                 <p data-key="featured_project1_desc">Brand video for Series A startup</p>
-                                <span class="featured-category" data-key="video_editing">Video Editing</span>
+                                <span class="featured-category" data-key="video_editing">Video Creation</span>
                             </div>
                         </div>
                     </div>
@@ -111,12 +120,12 @@
                 <!-- Featured Project 2 -->
                 <div class="featured-item">
                     <div class="featured-media">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Corporate Photography" class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Corporate Design" class="featured-image">
                         <div class="featured-overlay">
                             <div class="featured-info">
-                                <h3 data-key="featured_project2_title">Corporate Photography</h3>
-                                <p data-key="featured_project2_desc">Executive portraits for Fortune 500</p>
-                                <span class="featured-category" data-key="photography">Photography</span>
+                                <h3 data-key="featured_project2_title">Corporate Design</h3>
+                                <p data-key="featured_project2_desc">Visual identity and social media graphics</p>
+                                <span class="featured-category" data-key="graphic_design">Graphic Design</span>
                             </div>
                         </div>
                     </div>
@@ -130,7 +139,7 @@
                             <div class="featured-info">
                                 <h3 data-key="featured_project3_title">Influencer Content</h3>
                                 <p data-key="featured_project3_desc">YouTube series production</p>
-                                <span class="featured-category" data-key="video_editing">Video Editing</span>
+                                <span class="featured-category" data-key="video_editing">Video Creation</span>
                             </div>
                         </div>
                     </div>
@@ -154,26 +163,26 @@
             <div class="services-grid">
                 <div class="service-item">
                     <div class="service-icon">🎬</div>
-                    <h3 data-key="service1_title">Video Production</h3>
+                    <h3 data-key="service1_title">Video Creation & Editing</h3>
                     <p data-key="service1_desc">From concept to delivery, creating compelling video content that drives engagement and conversion.</p>
                 </div>
                 
                 <div class="service-item">
-                    <div class="service-icon">✂️</div>
-                    <h3 data-key="service2_title">Post-Production</h3>
-                    <p data-key="service2_desc">Advanced editing, color grading, and motion graphics to elevate your visual content.</p>
-                </div>
-                
-                <div class="service-item">
-                    <div class="service-icon">📸</div>
-                    <h3 data-key="service3_title">Photography</h3>
-                    <p data-key="service3_desc">Professional photography for corporate, product, and creative campaigns.</p>
-                </div>
-                
-                <div class="service-item">
                     <div class="service-icon">🎨</div>
-                    <h3 data-key="service4_title">Creative Direction</h3>
-                    <p data-key="service4_desc">Strategic creative leadership to ensure your brand message resonates with your audience.</p>
+                    <h3 data-key="service2_title">Graphic Design</h3>
+                    <p data-key="service2_desc">Creating stunning banners, social media graphics, and visual materials for your brand.</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">✂️</div>
+                    <h3 data-key="service3_title">Post-Production</h3>
+                    <p data-key="service3_desc">Advanced editing, color grading, and visual effects to elevate your existing content.</p>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">💡</div>
+                    <h3 data-key="service4_title">Creative Consulting</h3>
+                    <p data-key="service4_desc">Strategic creative guidance to ensure your visual content resonates with your audience.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +204,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p data-key="footer_copyright">&copy; 2024 Alberto Guimarães. All rights reserved.</p>
+                    <p data-key="footer_copyright">&copy; 2025 Alberto Guimarães. All rights reserved.</p>
+                    <p class="footer-credits"><span data-key="footer_developed">Desenvolvido por</span> <a href="https://github.com/vininleao" target="_blank" rel="noopener">Vinícius Leão</a></p>
                 </div>
                 <div class="footer-right">
                     <div class="social-links">

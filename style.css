@@ -1,7 +1,7 @@
 /* ===================================
    APOLLO PROJECT - ALBERTO GUIMARÃES
    Premium Portfolio Website Styles
-   Updated with Language Selector Improvements
+   Final Version with Flag Icons Library
    =================================== */
 
 /* CSS Variables for consistent theming */
@@ -255,7 +255,10 @@ input, textarea, select {
     width: 100%;
 }
 
-/* IMPROVED LANGUAGE SELECTOR */
+/* =============
+   LANGUAGE SELECTOR WITH FLAG ICONS
+   ============= */
+
 .language-selector {
     display: flex;
     gap: var(--spacing-xs);
@@ -269,10 +272,10 @@ input, textarea, select {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
+    width: 40px;
     height: 36px;
+    font-size: 24px;
     border-radius: 8px;
-    font-size: 18px;
     background: transparent;
     transition: all var(--transition-fast);
     position: relative;
@@ -282,6 +285,10 @@ input, textarea, select {
 .lang-btn:hover {
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-1px);
+}
+
+.lang-btn:hover .fi {
+    transform: scale(1.1);
 }
 
 .lang-btn.active {
@@ -299,6 +306,11 @@ input, textarea, select {
     bottom: 0;
     background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
     pointer-events: none;
+}
+
+.lang-btn .fi {
+    transition: all var(--transition-fast);
+    border-radius: 2px;
 }
 
 .hamburger {
@@ -523,6 +535,24 @@ input, textarea, select {
     font-size: var(--font-size-large);
     color: var(--text-secondary);
     max-width: 600px;
+}
+
+/* =============
+   WORK PAGE SUBTITLE CENTERED
+   ============= */
+
+.work-header .page-subtitle {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* =============
+   CONTACT PAGE SUBTITLE ALIGNMENT
+   ============= */
+
+.contact-header .page-subtitle {
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* =============
@@ -1398,6 +1428,21 @@ input, textarea, select {
 .footer-left p {
     color: var(--text-secondary);
     font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-credits {
+    font-size: var(--font-size-small);
+    color: var(--text-muted);
+}
+
+.footer-credits a {
+    color: var(--accent-color);
+    transition: all var(--transition-fast);
+}
+
+.footer-credits a:hover {
+    color: var(--accent-hover);
 }
 
 .social-links {
@@ -1521,9 +1566,9 @@ input, textarea, select {
     }
     
     .lang-btn {
-        width: 32px;
+        width: 36px;
         height: 32px;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -1551,6 +1596,12 @@ input, textarea, select {
     
     .modal-info {
         padding: var(--spacing-lg);
+    }
+    
+    .lang-btn {
+        width: 32px;
+        height: 28px;
+        font-size: 16px;
     }
 }
 
